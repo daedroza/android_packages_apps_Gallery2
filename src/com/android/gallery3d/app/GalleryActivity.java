@@ -128,6 +128,9 @@ public final class GalleryActivity extends AbstractGalleryActivity implements On
         if (isPermissionGranted()) {
             init();
         }
+
+        startAlbumPage();
+        mBottomNavigation.setSelectedItemId(R.id.action_album);
     }
 
     private void init() {
@@ -200,6 +203,7 @@ public final class GalleryActivity extends AbstractGalleryActivity implements On
                 return true;
             }
         });
+
     }
 
     public void toggleNavBar(boolean show) {
