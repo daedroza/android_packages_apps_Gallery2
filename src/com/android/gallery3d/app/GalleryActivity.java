@@ -200,6 +200,7 @@ public final class GalleryActivity extends AbstractGalleryActivity implements On
                 return true;
             }
         });
+
     }
 
     public void toggleNavBar(boolean show) {
@@ -287,7 +288,8 @@ public final class GalleryActivity extends AbstractGalleryActivity implements On
             toggleNavBar(false);
         } else {
             mDrawerLayoutSupported = true;
-            startTimelinePage();
+            startAlbumPage();
+            mBottomNavigation.setSelectedItemId(R.id.action_album);
             mToolbar.setTitle(R.string.albums_title);
         }
         toggleNavBar(mDrawerLayoutSupported);

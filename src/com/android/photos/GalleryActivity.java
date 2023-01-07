@@ -59,7 +59,7 @@ public class GalleryActivity extends Activity implements MultiChoiceManager.Prov
                 AlbumSetFragment.class, null);
 
         if (savedInstanceState != null) {
-            ab.setSelectedNavigationItem(savedInstanceState.getInt("tab", 0));
+            ab.setSelectedNavigationItem(savedInstanceState.getInt("tab", 1));
         }
     }
 
